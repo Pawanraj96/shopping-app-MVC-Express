@@ -1,0 +1,24 @@
+<form class="container col-4 md-4" action="/products/edit-product" method="POST">
+    <h1 align="center">Edit Gadgets</h1>
+    <div class="form-group">
+        <label for="_id">Sl.No</label>
+        <input type="number" class="form-control" name='_id' id="_id" aria-describedby="_id" placeholder="Product Id"
+            value="{{selectedProduct._id}}">
+    </div>
+    <div class="form-group">
+        <label for="pName">Product</label>
+        <input type="text" class="form-control" name='pName' id="pName" placeholder="Product Name"
+            value="{{selectedProduct.pName}}">
+    </div>
+    <div class="form-group">
+        <label for="pDesc">Description</label>
+        <input type="text" class="form-control" name='pDesc' id="pDesc" placeholder=" ProductDescription"
+            value="{{selectedProduct.pDesc}}">
+    </div>
+    <div class="form-group">
+        <label for="pPrice">Price</label>
+        <input type="number" class="form-control" name='pPrice' id="pPrice" placeholder=" Product Price"
+            value="{{selectedProduct.pPrice}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
